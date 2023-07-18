@@ -1,17 +1,7 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
-
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
-    println(9)
-
-    //the print function brings the output but continues in the same line
-    //the println function breaks to the new line after running the code
-
-    //below is the code to the githuh
-    //
+fun main(){
+    //variable in kotlin programming language
+    // variables in kkotlin are declared using (var) for the the variabkes that will be changing st sany time
+    // and the (val) for the variables that are constants
 
 
-    print("hello world")
 }
