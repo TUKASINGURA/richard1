@@ -14,7 +14,8 @@ fun main(){
         groupA[3] to groupB[3],
         groupA[4] to groupB[4]
 )
-println(combinedGroups)
+    println()
+println("the first map is:  $combinedGroups")
 
     combinedGroups.putIfAbsent("c", "cow" )
     combinedGroups.putIfAbsent("g", "girraffe")
@@ -23,6 +24,7 @@ println(combinedGroups)
     combinedGroups.putIfAbsent("e","elephant")
     combinedGroups.replace("e","rabbit")
     combinedGroups.putIfAbsent("f","frog")
-    println(combinedGroups)
+    println()
+    println("the modified map is $combinedGroups")
 }
 
