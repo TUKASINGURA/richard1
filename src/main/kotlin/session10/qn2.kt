@@ -7,24 +7,27 @@ fun main(){
     val groupA= listOf<String>("a", "b", "c", "d", "e", "g", "r", "f")
     val groupB= listOf<String>("ant", "bee","cat" , "dog","elephant")
 
-    val combinedGroups= mutableMapOf<String, String>(
-        groupA[0] to groupB[0],
-        groupA[1] to groupB[1],
-        groupA[2] to groupB[2],
-        groupA[3] to groupB[3],
-        groupA[4] to groupB[4]
-)
-    println()
-println("the first map is:  $combinedGroups")
+ val listGroup= mutableMapOf<String,String>()
+     .apply { groupA.indices }
 
-    combinedGroups.putIfAbsent("c", "cow" )
-    combinedGroups.putIfAbsent("g", "girraffe")
-    combinedGroups.putIfAbsent("r","rat")
-    combinedGroups.putIfAbsent("d","dog")
-    combinedGroups.putIfAbsent("e","elephant")
-    combinedGroups.replace("e","rabbit")
-    combinedGroups.putIfAbsent("f","frog")
-    println()
-    println("the modified map is $combinedGroups")
+//    val combinedGroups= mutableMapOf<String, String>(
+//        groupA[0] to groupB[0],
+//        groupA[1] to groupB[1],
+//        groupA[2] to groupB[2],
+//        groupA[3] to groupB[3],
+//        groupA[4] to groupB[4]
+//)
+//    println()
+//println("the first map is:  $combinedGroups")
+//
+//    combinedGroups.putIfAbsent("c", "cow" )
+//    combinedGroups.putIfAbsent("g", "girraffe")
+//    combinedGroups.putIfAbsent("r","rat")
+//    combinedGroups.putIfAbsent("d","dog")
+//    combinedGroups.putIfAbsent("e","elephant")
+//    combinedGroups.replace("e","rabbit")
+//    combinedGroups.putIfAbsent("f","frog")
+//    println()
+//    println("the modified map is $combinedGroups")
 }
 
