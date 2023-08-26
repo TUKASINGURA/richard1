@@ -38,3 +38,22 @@ fun main(){
 
     println(RangeRover.brand)
 }
+
+open class Engine(){
+    //private, public and protected members of a class
+
+    // all the members of a class a public by default
+
+   private  var piston:Int= 56
+    protected var plugs:Int=4
+    var motors:Int=4
+    var funs:Int=32
+
+    fun mainPurpose(){
+        println("make the element move ")
+    }
+}
+
+class CarEngine: Engine(){
+
+}
