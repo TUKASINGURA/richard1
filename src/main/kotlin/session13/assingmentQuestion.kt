@@ -10,9 +10,19 @@ open class Color{
     var name:String ="cow"
     var symbol:String= ""
     var hexCode:String=""
-   open fun attributes():String{
 
-        return "the name of the animal is $name represented by $symbol "
+    constructor()
+    open fun attributes(): String {
+        return ""
+    }
+
+    constructor(name:String, symbol:String,hexCode:String)
+   open fun attributes(name:String, symbol:String,hexCode:String):String{
+       this.name=name
+       this.symbol=symbol
+       this.hexCode=hexCode
+
+        return "$name $symbol $hexCode"
     }
 }
 
