@@ -28,7 +28,7 @@ class ZBufferDemoByGroup4 : JPanel() {
                 zBuffer[x][y] = Long.MAX_VALUE
 /**                 the following line is responsible for setting the color to be displayed
                 in the backgroud8 */
-                image.setRGB(x, y, Color.MAGENTA.rgb)
+                image.setRGB(x, y, Color.GREEN.rgb)
             }
         }
 
@@ -49,7 +49,7 @@ class ZBufferDemoByGroup4 : JPanel() {
                     zBuffer[i][j] = z.toLong()
 
                     // Render the pixel in some color
-                    g2d.color = Color(255, 123, 0) // this one for displaying and implementing the colors e.g Red
+                    g2d.color = Color(255, 2, 0) // this one for displaying and implementing the colors e.g Red
                     g2d.drawRect(i, j, 10, 5)
                 }
             }

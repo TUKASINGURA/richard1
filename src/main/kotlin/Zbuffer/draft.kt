@@ -26,7 +26,7 @@ class ZBufferDemo : JPanel() {
         for (x in 0 until width) {
             for (y in 0 until height) {
                 zBuffer[x][y] = Long.MAX_VALUE
-                image.setRGB(x, y, Color.BLACK.rgb)
+                image.setRGB(x, y, Color.GREEN.rgb)
             }
         }
 
